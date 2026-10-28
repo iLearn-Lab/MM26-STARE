@@ -236,40 +236,8 @@ Results from Table 5. The two backbone groups are separate ablation sequences. T
 | DINOv3 ViT-B/16 | Yes | No | 14.4 | 26.3 | 33.6 | 29.0 | 57.9 | 70.7 |
 | DINOv3 ViT-B/16 | Yes | Yes | 14.7 | 26.4 | 33.4 | 30.2 | 59.1 | 71.6 |
 
-## Release Scope
 
-| Artifact | Status |
-| --- | --- |
-| Paper introduction and experimental results | Available |
-| Bibliographic information | Available in [citation.bib](citation.bib) |
-| Source code and configuration files | Coming soon |
-| Environment and installation instructions | Coming soon |
-| Data preparation scripts | Coming soon |
-| Training, evaluation, and inference commands | Coming soon |
-| Pretrained and fine-tuned checkpoints | Coming soon |
 
-## Environment Installation
-
-Coming soon. Dependency versions and installation commands will accompany the implementation release.
-
-<details>
-<summary>Implementation settings reported in the paper</summary>
-
-| Setting | Value |
-| --- | --- |
-| Vision backbone | Frozen DINOv3 ViT-B/16 |
-| Visual adaptation | Two trainable Transformer blocks |
-| Text encoder | OpenAI CLIP text encoder |
-| Input image resolution | 224 × 224 for training and inference |
-| Aggregated text tokens (m) | 8 |
-| Learnable pooling queries (Nq) | 4 |
-| Learning rate | 1 × 10<sup>-4</sup> |
-| Batch size | 1,024 |
-| Training hardware | A800 GPUs |
-
-These settings are a summary of the paper and do not constitute a complete installation or reproduction configuration.
-
-</details>
 
 ## Data Preparation
 
@@ -303,7 +271,6 @@ If you find this work useful, please cite:
   series = {MM '26},
   year = {2026},
   publisher = {ACM},
-  address = {New York, NY, USA},
   location = {Rio de Janeiro, Brazil},
   isbn = {979-8-4007-2213-4},
   doi = {10.1145/3767308.3836505},
